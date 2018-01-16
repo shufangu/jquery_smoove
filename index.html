@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" height="100%">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="author" content="">
+
+    <title>Smoove练习</title>
+
+    <link href="./bootstrsp.css" rel="stylesheet">
+
+    <style>
+
+    html, body, .banner, .container {
+
+        height:100%;
+
+        text-align: center;
+
+    }
+
+    .block {
+
+        height:300px;
+
+        background: blue;
+
+        margin-bottom: 20px;
+
+    }
+	img{
+		height:300px;
+		width:100%;
+	}
+
+    </style>
+
+  </head>
+
+
+
+  <body>
+
+  <div class="container">
+
+    <h1>向下滚动鼠标您将看到效果,贾斯丁.比伯</h1>
+
+  </div>
+
+  <div class="container">
+
+    <h2></h2>
+
+    <div class="row">
+
+      <div class="col-md-6"><div class="block"><img src="./img/jb1.jpg"/></div></div>
+
+      <div class="col-md-6"><div class="block"><img src="./img/jb2.jpg"/></div></div>
+
+    </div>
+
+    <h2>You can also move objects across the screen...</h2>
+
+    <div class="row">
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="-200px"><img src="./img/jb3.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="-100px"><img src="./img/jb4.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="100px"><img src="./img/jb5.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="200px"><img src="./img/jb6.jpg"/></div></div>
+
+    </div>
+
+    <h2>...or rotate them</h2>
+
+    <div class="row">
+
+      <div class="col-md-3"><div class="block" data-move-x="-500px" data-rotate="90deg"><img src="./img/jb7.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="-200px" data-rotate="45deg"><img src="./img/jb8.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-y="200px" data-move-x="200px" data-rotate="-45deg"><img src="./img/jb9.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-move-x="500px" data-rotate="-90deg"><img src="./img/jb10.jpg"/></div></div>
+
+    </div>
+
+   
+
+    <h2>Even use cool 3D effects</h2>
+
+    <div class="row">
+
+      <div class="col-md-4"><div class="block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px"><img src="./img/jb11.jpg"/></div></div>
+
+      <div class="col-md-4"><div class="block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px"><img src="./img/jb12.jpg"/></div></div>
+
+      <div class="col-md-4"><div class="block" data-rotate-x="90deg" data-move-z="-500px" data-move-y="200px"><img src="./img/jb13.jpg"/></div></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3"><div class="block" data-rotate-y="180deg" data-move-z="-200px" data-move-x="-300px"><img src="./img/jb14.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-rotate-x="180deg" data-rotate-y="180deg" data-move-z="-700px"><img src="./img/jb15.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-rotate-x="180deg" data-rotate-y="45deg" data-move-z="-500px"><img src="./img/jb16.jpg"/></div></div>
+
+      <div class="col-md-3"><div class="block" data-rotate-y="180deg" data-move-z="-100px" data-move-x="500px"><img src="./img/jb17.jpg"/></div></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4"><div class="block" data-rotate-y="270deg" data-move-x="-150%"><img src="./img/jb18.jpg"/></div></div>
+      <div class="col-md-4"><div class="block" data-rotate-y="270deg" data-move-x="150%"><img src="./img/jb19.jpg"/></div></div>
+	  <div class="col-md-4"><div class="block" data-rotate-y="270deg" data-move-x="150%"><img src="./img/jb22.jpg"/></div></div>
+
+    </div>
+
+    <h2>Scale &amp; skew them...</h2>
+
+    <div class="row">
+
+      <div class="col-md-6"><div class="block" data-scale="5" ><img src="./img/jb20.jpg"/></div></div>
+
+      <div class="col-md-6"><div class="block" data-scale="0.2" data-skew="90deg,90deg"><img src="./img/jb21.jpg"/></div></div>
+
+    </div>
+
+
+
+  </div>
+
+    <script src="./jquery.min.js"></script>
+
+    <script src="./jquery.smoove.js"></script>
+
+    <script>
+		$('.block').smoove({offset:'40%'});
+		console.log('愿你幸福');
+	</script>
+
+  </body>
+
+</html>
+
